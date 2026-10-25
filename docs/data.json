@@ -2,11 +2,11 @@
   {
     "id": 1,
     "job_id": 1,
-    "target_url": "https://quotes.toscrape.com/",
+    "target_url": "https://quotes.toscrape.com/scroll",
     "title": "“The world as we have created it is a process of our thinking. It cannot be changed without changing our thinking.”",
     "price": null,
-    "item_url": "https://quotes.toscrape.com/author/Albert-Einstein",
-    "scraped_at": "2026-10-25T06:48:42.837025",
+    "item_url": "https://quotes.toscrape.com/scroll",
+    "scraped_at": "2026-10-25T06:56:32.511991",
     "extra_data": {
       "author": "Albert Einstein",
       "tags": [
@@ -20,11 +20,11 @@
   {
     "id": 2,
     "job_id": 1,
-    "target_url": "https://quotes.toscrape.com/",
+    "target_url": "https://quotes.toscrape.com/scroll",
     "title": "“It is our choices, Harry, that show what we truly are, far more than our abilities.”",
     "price": null,
-    "item_url": "https://quotes.toscrape.com/author/J-K-Rowling",
-    "scraped_at": "2026-10-25T06:48:42.837114",
+    "item_url": "https://quotes.toscrape.com/scroll",
+    "scraped_at": "2026-10-25T06:56:32.512101",
     "extra_data": {
       "author": "J.K. Rowling",
       "tags": [
@@ -36,11 +36,11 @@
   {
     "id": 3,
     "job_id": 1,
-    "target_url": "https://quotes.toscrape.com/",
+    "target_url": "https://quotes.toscrape.com/scroll",
     "title": "“There are only two ways to live your life. One is as though nothing is a miracle. The other is as though everything is a miracle.”",
     "price": null,
-    "item_url": "https://quotes.toscrape.com/author/Albert-Einstein",
-    "scraped_at": "2026-10-25T06:48:42.837139",
+    "item_url": "https://quotes.toscrape.com/scroll",
+    "scraped_at": "2026-10-25T06:56:32.512130",
     "extra_data": {
       "author": "Albert Einstein",
       "tags": [
@@ -55,11 +55,11 @@
   {
     "id": 4,
     "job_id": 1,
-    "target_url": "https://quotes.toscrape.com/",
+    "target_url": "https://quotes.toscrape.com/scroll",
     "title": "“The person, be it gentleman or lady, who has not pleasure in a good novel, must be intolerably stupid.”",
     "price": null,
-    "item_url": "https://quotes.toscrape.com/author/Jane-Austen",
-    "scraped_at": "2026-10-25T06:48:42.837156",
+    "item_url": "https://quotes.toscrape.com/scroll",
+    "scraped_at": "2026-10-25T06:56:32.512152",
     "extra_data": {
       "author": "Jane Austen",
       "tags": [
@@ -73,11 +73,11 @@
   {
     "id": 5,
     "job_id": 1,
-    "target_url": "https://quotes.toscrape.com/",
+    "target_url": "https://quotes.toscrape.com/scroll",
     "title": "“Imperfection is beauty, madness is genius and it's better to be absolutely ridiculous than absolutely boring.”",
     "price": null,
-    "item_url": "https://quotes.toscrape.com/author/Marilyn-Monroe",
-    "scraped_at": "2026-10-25T06:48:42.837173",
+    "item_url": "https://quotes.toscrape.com/scroll",
+    "scraped_at": "2026-10-25T06:56:32.512171",
     "extra_data": {
       "author": "Marilyn Monroe",
       "tags": [
@@ -89,11 +89,11 @@
   {
     "id": 6,
     "job_id": 1,
-    "target_url": "https://quotes.toscrape.com/",
+    "target_url": "https://quotes.toscrape.com/scroll",
     "title": "“Try not to become a man of success. Rather become a man of value.”",
     "price": null,
-    "item_url": "https://quotes.toscrape.com/author/Albert-Einstein",
-    "scraped_at": "2026-10-25T06:48:42.837187",
+    "item_url": "https://quotes.toscrape.com/scroll",
+    "scraped_at": "2026-10-25T06:56:32.512188",
     "extra_data": {
       "author": "Albert Einstein",
       "tags": [
@@ -106,11 +106,11 @@
   {
     "id": 7,
     "job_id": 1,
-    "target_url": "https://quotes.toscrape.com/",
+    "target_url": "https://quotes.toscrape.com/scroll",
     "title": "“It is better to be hated for what you are than to be loved for what you are not.”",
     "price": null,
-    "item_url": "https://quotes.toscrape.com/author/Andre-Gide",
-    "scraped_at": "2026-10-25T06:48:42.837198",
+    "item_url": "https://quotes.toscrape.com/scroll",
+    "scraped_at": "2026-10-25T06:56:32.512207",
     "extra_data": {
       "author": "André Gide",
       "tags": [
@@ -122,11 +122,11 @@
   {
     "id": 8,
     "job_id": 1,
-    "target_url": "https://quotes.toscrape.com/",
+    "target_url": "https://quotes.toscrape.com/scroll",
     "title": "“I have not failed. I've just found 10,000 ways that won't work.”",
     "price": null,
-    "item_url": "https://quotes.toscrape.com/author/Thomas-A-Edison",
-    "scraped_at": "2026-10-25T06:48:42.837213",
+    "item_url": "https://quotes.toscrape.com/scroll",
+    "scraped_at": "2026-10-25T06:56:32.512234",
     "extra_data": {
       "author": "Thomas A. Edison",
       "tags": [
@@ -140,11 +140,11 @@
   {
     "id": 9,
     "job_id": 1,
-    "target_url": "https://quotes.toscrape.com/",
+    "target_url": "https://quotes.toscrape.com/scroll",
     "title": "“A woman is like a tea bag; you never know how strong it is until it's in hot water.”",
     "price": null,
-    "item_url": "https://quotes.toscrape.com/author/Eleanor-Roosevelt",
-    "scraped_at": "2026-10-25T06:48:42.837225",
+    "item_url": "https://quotes.toscrape.com/scroll",
+    "scraped_at": "2026-10-25T06:56:32.512256",
     "extra_data": {
       "author": "Eleanor Roosevelt",
       "tags": [
@@ -155,11 +155,11 @@
   {
     "id": 10,
     "job_id": 1,
-    "target_url": "https://quotes.toscrape.com/",
+    "target_url": "https://quotes.toscrape.com/scroll",
     "title": "“A day without sunshine is like, you know, night.”",
     "price": null,
-    "item_url": "https://quotes.toscrape.com/author/Steve-Martin",
-    "scraped_at": "2026-10-25T06:48:42.837236",
+    "item_url": "https://quotes.toscrape.com/scroll",
+    "scraped_at": "2026-10-25T06:56:32.512274",
     "extra_data": {
       "author": "Steve Martin",
       "tags": [
@@ -167,6 +167,1073 @@
         "obvious",
         "simile"
       ]
+    }
+  },
+  {
+    "id": 11,
+    "job_id": 1,
+    "target_url": "https://quotes.toscrape.com/scroll",
+    "title": "“This life is what you make it. No matter what, you're going to mess up sometimes, it's a universal truth. But the good part is you get to decide how you're going to mess it up. Girls will be your friends - they'll act like it anyway. But just remember, some come, some go. The ones that stay with you through everything - they're your true best friends. Don't let go of them. Also remember, sisters make the best friends in the world. As for lovers, well, they'll come and go too. And baby, I hate to say it, most of them - actually pretty much all of them are going to break your heart, but you can't give up because if you give up, you'll never find your soulmate. You'll never find that half who makes you whole and that goes for everything. Just because you fail once, doesn't mean you're gonna fail at everything. Keep trying, hold on, and always, always, always believe in yourself, because if you don't, then who will, sweetie? So keep your head high, keep your chin up, and most importantly, keep smiling, because life's a beautiful thing and there's so much to smile about.”",
+    "price": null,
+    "item_url": "https://quotes.toscrape.com/scroll",
+    "scraped_at": "2026-10-25T06:56:32.512291",
+    "extra_data": {
+      "author": "Marilyn Monroe",
+      "tags": [
+        "friends",
+        "heartbreak",
+        "inspirational",
+        "life",
+        "love",
+        "sisters"
+      ]
+    }
+  },
+  {
+    "id": 12,
+    "job_id": 1,
+    "target_url": "https://quotes.toscrape.com/scroll",
+    "title": "“It takes a great deal of bravery to stand up to our enemies, but just as much to stand up to our friends.”",
+    "price": null,
+    "item_url": "https://quotes.toscrape.com/scroll",
+    "scraped_at": "2026-10-25T06:56:32.512309",
+    "extra_data": {
+      "author": "J.K. Rowling",
+      "tags": [
+        "courage",
+        "friends"
+      ]
+    }
+  },
+  {
+    "id": 13,
+    "job_id": 1,
+    "target_url": "https://quotes.toscrape.com/scroll",
+    "title": "“If you can't explain it to a six year old, you don't understand it yourself.”",
+    "price": null,
+    "item_url": "https://quotes.toscrape.com/scroll",
+    "scraped_at": "2026-10-25T06:56:32.512324",
+    "extra_data": {
+      "author": "Albert Einstein",
+      "tags": [
+        "simplicity",
+        "understand"
+      ]
+    }
+  },
+  {
+    "id": 14,
+    "job_id": 1,
+    "target_url": "https://quotes.toscrape.com/scroll",
+    "title": "“You may not be her first, her last, or her only. She loved before she may love again. But if she loves you now, what else matters? She's not perfect—you aren't either, and the two of you may never be perfect together but if she can make you laugh, cause you to think twice, and admit to being human and making mistakes, hold onto her and give her the most you can. She may not be thinking about you every second of the day, but she will give you a part of her that she knows you can break—her heart. So don't hurt her, don't change her, don't analyze and don't expect more than she can give. Smile when she makes you happy, let her know when she makes you mad, and miss her when she's not there.”",
+    "price": null,
+    "item_url": "https://quotes.toscrape.com/scroll",
+    "scraped_at": "2026-10-25T06:56:32.512340",
+    "extra_data": {
+      "author": "Bob Marley",
+      "tags": [
+        "love"
+      ]
+    }
+  },
+  {
+    "id": 15,
+    "job_id": 1,
+    "target_url": "https://quotes.toscrape.com/scroll",
+    "title": "“I like nonsense, it wakes up the brain cells. Fantasy is a necessary ingredient in living.”",
+    "price": null,
+    "item_url": "https://quotes.toscrape.com/scroll",
+    "scraped_at": "2026-10-25T06:56:32.512355",
+    "extra_data": {
+      "author": "Dr. Seuss",
+      "tags": [
+        "fantasy"
+      ]
+    }
+  },
+  {
+    "id": 16,
+    "job_id": 1,
+    "target_url": "https://quotes.toscrape.com/scroll",
+    "title": "“I may not have gone where I intended to go, but I think I have ended up where I needed to be.”",
+    "price": null,
+    "item_url": "https://quotes.toscrape.com/scroll",
+    "scraped_at": "2026-10-25T06:56:32.512370",
+    "extra_data": {
+      "author": "Douglas Adams",
+      "tags": [
+        "life",
+        "navigation"
+      ]
+    }
+  },
+  {
+    "id": 17,
+    "job_id": 1,
+    "target_url": "https://quotes.toscrape.com/scroll",
+    "title": "“The opposite of love is not hate, it's indifference. The opposite of art is not ugliness, it's indifference. The opposite of faith is not heresy, it's indifference. And the opposite of life is not death, it's indifference.”",
+    "price": null,
+    "item_url": "https://quotes.toscrape.com/scroll",
+    "scraped_at": "2026-10-25T06:56:32.512385",
+    "extra_data": {
+      "author": "Elie Wiesel",
+      "tags": [
+        "activism",
+        "apathy",
+        "hate",
+        "indifference",
+        "inspirational",
+        "love",
+        "opposite",
+        "philosophy"
+      ]
+    }
+  },
+  {
+    "id": 18,
+    "job_id": 1,
+    "target_url": "https://quotes.toscrape.com/scroll",
+    "title": "“It is not a lack of love, but a lack of friendship that makes unhappy marriages.”",
+    "price": null,
+    "item_url": "https://quotes.toscrape.com/scroll",
+    "scraped_at": "2026-10-25T06:56:32.512400",
+    "extra_data": {
+      "author": "Friedrich Nietzsche",
+      "tags": [
+        "friendship",
+        "lack-of-friendship",
+        "lack-of-love",
+        "love",
+        "marriage",
+        "unhappy-marriage"
+      ]
+    }
+  },
+  {
+    "id": 19,
+    "job_id": 1,
+    "target_url": "https://quotes.toscrape.com/scroll",
+    "title": "“Good friends, good books, and a sleepy conscience: this is the ideal life.”",
+    "price": null,
+    "item_url": "https://quotes.toscrape.com/scroll",
+    "scraped_at": "2026-10-25T06:56:32.512422",
+    "extra_data": {
+      "author": "Mark Twain",
+      "tags": [
+        "books",
+        "contentment",
+        "friends",
+        "friendship",
+        "life"
+      ]
+    }
+  },
+  {
+    "id": 20,
+    "job_id": 1,
+    "target_url": "https://quotes.toscrape.com/scroll",
+    "title": "“Life is what happens to us while we are making other plans.”",
+    "price": null,
+    "item_url": "https://quotes.toscrape.com/scroll",
+    "scraped_at": "2026-10-25T06:56:32.512438",
+    "extra_data": {
+      "author": "Allen Saunders",
+      "tags": [
+        "fate",
+        "life",
+        "misattributed-john-lennon",
+        "planning",
+        "plans"
+      ]
+    }
+  },
+  {
+    "id": 21,
+    "job_id": 1,
+    "target_url": "https://quotes.toscrape.com/scroll",
+    "title": "“I love you without knowing how, or when, or from where. I love you simply, without problems or pride: I love you in this way because I do not know any other way of loving but this, in which there is no I or you, so intimate that your hand upon my chest is my hand, so intimate that when I fall asleep your eyes close.”",
+    "price": null,
+    "item_url": "https://quotes.toscrape.com/scroll",
+    "scraped_at": "2026-10-25T06:56:32.512456",
+    "extra_data": {
+      "author": "Pablo Neruda",
+      "tags": [
+        "love",
+        "poetry"
+      ]
+    }
+  },
+  {
+    "id": 22,
+    "job_id": 1,
+    "target_url": "https://quotes.toscrape.com/scroll",
+    "title": "“For every minute you are angry you lose sixty seconds of happiness.”",
+    "price": null,
+    "item_url": "https://quotes.toscrape.com/scroll",
+    "scraped_at": "2026-10-25T06:56:32.512471",
+    "extra_data": {
+      "author": "Ralph Waldo Emerson",
+      "tags": [
+        "happiness"
+      ]
+    }
+  },
+  {
+    "id": 23,
+    "job_id": 1,
+    "target_url": "https://quotes.toscrape.com/scroll",
+    "title": "“If you judge people, you have no time to love them.”",
+    "price": null,
+    "item_url": "https://quotes.toscrape.com/scroll",
+    "scraped_at": "2026-10-25T06:56:32.512485",
+    "extra_data": {
+      "author": "Mother Teresa",
+      "tags": [
+        "attributed-no-source"
+      ]
+    }
+  },
+  {
+    "id": 24,
+    "job_id": 1,
+    "target_url": "https://quotes.toscrape.com/scroll",
+    "title": "“Anyone who thinks sitting in church can make you a Christian must also think that sitting in a garage can make you a car.”",
+    "price": null,
+    "item_url": "https://quotes.toscrape.com/scroll",
+    "scraped_at": "2026-10-25T06:56:32.512499",
+    "extra_data": {
+      "author": "Garrison Keillor",
+      "tags": [
+        "humor",
+        "religion"
+      ]
+    }
+  },
+  {
+    "id": 25,
+    "job_id": 1,
+    "target_url": "https://quotes.toscrape.com/scroll",
+    "title": "“Beauty is in the eye of the beholder and it may be necessary from time to time to give a stupid or misinformed beholder a black eye.”",
+    "price": null,
+    "item_url": "https://quotes.toscrape.com/scroll",
+    "scraped_at": "2026-10-25T06:56:32.512514",
+    "extra_data": {
+      "author": "Jim Henson",
+      "tags": [
+        "humor"
+      ]
+    }
+  },
+  {
+    "id": 26,
+    "job_id": 1,
+    "target_url": "https://quotes.toscrape.com/scroll",
+    "title": "“Today you are You, that is truer than true. There is no one alive who is Youer than You.”",
+    "price": null,
+    "item_url": "https://quotes.toscrape.com/scroll",
+    "scraped_at": "2026-10-25T06:56:32.512529",
+    "extra_data": {
+      "author": "Dr. Seuss",
+      "tags": [
+        "comedy",
+        "life",
+        "yourself"
+      ]
+    }
+  },
+  {
+    "id": 27,
+    "job_id": 1,
+    "target_url": "https://quotes.toscrape.com/scroll",
+    "title": "“If you want your children to be intelligent, read them fairy tales. If you want them to be more intelligent, read them more fairy tales.”",
+    "price": null,
+    "item_url": "https://quotes.toscrape.com/scroll",
+    "scraped_at": "2026-10-25T06:56:32.512549",
+    "extra_data": {
+      "author": "Albert Einstein",
+      "tags": [
+        "children",
+        "fairy-tales"
+      ]
+    }
+  },
+  {
+    "id": 28,
+    "job_id": 1,
+    "target_url": "https://quotes.toscrape.com/scroll",
+    "title": "“It is impossible to live without failing at something, unless you live so cautiously that you might as well not have lived at all - in which case, you fail by default.”",
+    "price": null,
+    "item_url": "https://quotes.toscrape.com/scroll",
+    "scraped_at": "2026-10-25T06:56:32.512565",
+    "extra_data": {
+      "author": "J.K. Rowling"
+    }
+  },
+  {
+    "id": 29,
+    "job_id": 1,
+    "target_url": "https://quotes.toscrape.com/scroll",
+    "title": "“Logic will get you from A to Z; imagination will get you everywhere.”",
+    "price": null,
+    "item_url": "https://quotes.toscrape.com/scroll",
+    "scraped_at": "2026-10-25T06:56:32.512580",
+    "extra_data": {
+      "author": "Albert Einstein",
+      "tags": [
+        "imagination"
+      ]
+    }
+  },
+  {
+    "id": 30,
+    "job_id": 1,
+    "target_url": "https://quotes.toscrape.com/scroll",
+    "title": "“One good thing about music, when it hits you, you feel no pain.”",
+    "price": null,
+    "item_url": "https://quotes.toscrape.com/scroll",
+    "scraped_at": "2026-10-25T06:56:32.512594",
+    "extra_data": {
+      "author": "Bob Marley",
+      "tags": [
+        "music"
+      ]
+    }
+  },
+  {
+    "id": 31,
+    "job_id": 1,
+    "target_url": "https://quotes.toscrape.com/scroll",
+    "title": "“The more that you read, the more things you will know. The more that you learn, the more places you'll go.”",
+    "price": null,
+    "item_url": "https://quotes.toscrape.com/scroll",
+    "scraped_at": "2026-10-25T06:56:32.512609",
+    "extra_data": {
+      "author": "Dr. Seuss",
+      "tags": [
+        "learning",
+        "reading",
+        "seuss"
+      ]
+    }
+  },
+  {
+    "id": 32,
+    "job_id": 1,
+    "target_url": "https://quotes.toscrape.com/scroll",
+    "title": "“Of course it is happening inside your head, Harry, but why on earth should that mean that it is not real?”",
+    "price": null,
+    "item_url": "https://quotes.toscrape.com/scroll",
+    "scraped_at": "2026-10-25T06:56:32.512623",
+    "extra_data": {
+      "author": "J.K. Rowling",
+      "tags": [
+        "dumbledore"
+      ]
+    }
+  },
+  {
+    "id": 33,
+    "job_id": 1,
+    "target_url": "https://quotes.toscrape.com/scroll",
+    "title": "“The truth is, everyone is going to hurt you. You just got to find the ones worth suffering for.”",
+    "price": null,
+    "item_url": "https://quotes.toscrape.com/scroll",
+    "scraped_at": "2026-10-25T06:56:32.512637",
+    "extra_data": {
+      "author": "Bob Marley",
+      "tags": [
+        "friendship"
+      ]
+    }
+  },
+  {
+    "id": 34,
+    "job_id": 1,
+    "target_url": "https://quotes.toscrape.com/scroll",
+    "title": "“Not all of us can do great things. But we can do small things with great love.”",
+    "price": null,
+    "item_url": "https://quotes.toscrape.com/scroll",
+    "scraped_at": "2026-10-25T06:56:32.512652",
+    "extra_data": {
+      "author": "Mother Teresa",
+      "tags": [
+        "misattributed-to-mother-teresa",
+        "paraphrased"
+      ]
+    }
+  },
+  {
+    "id": 35,
+    "job_id": 1,
+    "target_url": "https://quotes.toscrape.com/scroll",
+    "title": "“To the well-organized mind, death is but the next great adventure.”",
+    "price": null,
+    "item_url": "https://quotes.toscrape.com/scroll",
+    "scraped_at": "2026-10-25T06:56:32.512667",
+    "extra_data": {
+      "author": "J.K. Rowling",
+      "tags": [
+        "death",
+        "inspirational"
+      ]
+    }
+  },
+  {
+    "id": 36,
+    "job_id": 1,
+    "target_url": "https://quotes.toscrape.com/scroll",
+    "title": "“All you need is love. But a little chocolate now and then doesn't hurt.”",
+    "price": null,
+    "item_url": "https://quotes.toscrape.com/scroll",
+    "scraped_at": "2026-10-25T06:56:32.512681",
+    "extra_data": {
+      "author": "Charles M. Schulz",
+      "tags": [
+        "chocolate",
+        "food",
+        "humor"
+      ]
+    }
+  },
+  {
+    "id": 37,
+    "job_id": 1,
+    "target_url": "https://quotes.toscrape.com/scroll",
+    "title": "“We read to know we're not alone.”",
+    "price": null,
+    "item_url": "https://quotes.toscrape.com/scroll",
+    "scraped_at": "2026-10-25T06:56:32.512696",
+    "extra_data": {
+      "author": "William Nicholson",
+      "tags": [
+        "misattributed-to-c-s-lewis",
+        "reading"
+      ]
+    }
+  },
+  {
+    "id": 38,
+    "job_id": 1,
+    "target_url": "https://quotes.toscrape.com/scroll",
+    "title": "“Any fool can know. The point is to understand.”",
+    "price": null,
+    "item_url": "https://quotes.toscrape.com/scroll",
+    "scraped_at": "2026-10-25T06:56:32.512713",
+    "extra_data": {
+      "author": "Albert Einstein",
+      "tags": [
+        "knowledge",
+        "learning",
+        "understanding",
+        "wisdom"
+      ]
+    }
+  },
+  {
+    "id": 39,
+    "job_id": 1,
+    "target_url": "https://quotes.toscrape.com/scroll",
+    "title": "“I have always imagined that Paradise will be a kind of library.”",
+    "price": null,
+    "item_url": "https://quotes.toscrape.com/scroll",
+    "scraped_at": "2026-10-25T06:56:32.512729",
+    "extra_data": {
+      "author": "Jorge Luis Borges",
+      "tags": [
+        "books",
+        "library"
+      ]
+    }
+  },
+  {
+    "id": 40,
+    "job_id": 1,
+    "target_url": "https://quotes.toscrape.com/scroll",
+    "title": "“It is never too late to be what you might have been.”",
+    "price": null,
+    "item_url": "https://quotes.toscrape.com/scroll",
+    "scraped_at": "2026-10-25T06:56:32.512743",
+    "extra_data": {
+      "author": "George Eliot",
+      "tags": [
+        "inspirational"
+      ]
+    }
+  },
+  {
+    "id": 41,
+    "job_id": 1,
+    "target_url": "https://quotes.toscrape.com/scroll",
+    "title": "“A reader lives a thousand lives before he dies, said Jojen. The man who never reads lives only one.”",
+    "price": null,
+    "item_url": "https://quotes.toscrape.com/scroll",
+    "scraped_at": "2026-10-25T06:56:32.512757",
+    "extra_data": {
+      "author": "George R.R. Martin",
+      "tags": [
+        "read",
+        "readers",
+        "reading",
+        "reading-books"
+      ]
+    }
+  },
+  {
+    "id": 42,
+    "job_id": 1,
+    "target_url": "https://quotes.toscrape.com/scroll",
+    "title": "“You can never get a cup of tea large enough or a book long enough to suit me.”",
+    "price": null,
+    "item_url": "https://quotes.toscrape.com/scroll",
+    "scraped_at": "2026-10-25T06:56:32.512771",
+    "extra_data": {
+      "author": "C.S. Lewis",
+      "tags": [
+        "books",
+        "inspirational",
+        "reading",
+        "tea"
+      ]
+    }
+  },
+  {
+    "id": 43,
+    "job_id": 1,
+    "target_url": "https://quotes.toscrape.com/scroll",
+    "title": "“You believe lies so you eventually learn to trust no one but yourself.”",
+    "price": null,
+    "item_url": "https://quotes.toscrape.com/scroll",
+    "scraped_at": "2026-10-25T06:56:32.512786",
+    "extra_data": {
+      "author": "Marilyn Monroe"
+    }
+  },
+  {
+    "id": 44,
+    "job_id": 1,
+    "target_url": "https://quotes.toscrape.com/scroll",
+    "title": "“If you can make a woman laugh, you can make her do anything.”",
+    "price": null,
+    "item_url": "https://quotes.toscrape.com/scroll",
+    "scraped_at": "2026-10-25T06:56:32.512802",
+    "extra_data": {
+      "author": "Marilyn Monroe",
+      "tags": [
+        "girls",
+        "love"
+      ]
+    }
+  },
+  {
+    "id": 45,
+    "job_id": 1,
+    "target_url": "https://quotes.toscrape.com/scroll",
+    "title": "“Life is like riding a bicycle. To keep your balance, you must keep moving.”",
+    "price": null,
+    "item_url": "https://quotes.toscrape.com/scroll",
+    "scraped_at": "2026-10-25T06:56:32.512817",
+    "extra_data": {
+      "author": "Albert Einstein",
+      "tags": [
+        "life",
+        "simile"
+      ]
+    }
+  },
+  {
+    "id": 46,
+    "job_id": 1,
+    "target_url": "https://quotes.toscrape.com/scroll",
+    "title": "“The real lover is the man who can thrill you by kissing your forehead or smiling into your eyes or just staring into space.”",
+    "price": null,
+    "item_url": "https://quotes.toscrape.com/scroll",
+    "scraped_at": "2026-10-25T06:56:32.512834",
+    "extra_data": {
+      "author": "Marilyn Monroe",
+      "tags": [
+        "love"
+      ]
+    }
+  },
+  {
+    "id": 47,
+    "job_id": 1,
+    "target_url": "https://quotes.toscrape.com/scroll",
+    "title": "“A wise girl kisses but doesn't love, listens but doesn't believe, and leaves before she is left.”",
+    "price": null,
+    "item_url": "https://quotes.toscrape.com/scroll",
+    "scraped_at": "2026-10-25T06:56:32.512851",
+    "extra_data": {
+      "author": "Marilyn Monroe",
+      "tags": [
+        "attributed-no-source"
+      ]
+    }
+  },
+  {
+    "id": 48,
+    "job_id": 1,
+    "target_url": "https://quotes.toscrape.com/scroll",
+    "title": "“Only in the darkness can you see the stars.”",
+    "price": null,
+    "item_url": "https://quotes.toscrape.com/scroll",
+    "scraped_at": "2026-10-25T06:56:32.512867",
+    "extra_data": {
+      "author": "Martin Luther King Jr.",
+      "tags": [
+        "hope",
+        "inspirational"
+      ]
+    }
+  },
+  {
+    "id": 49,
+    "job_id": 1,
+    "target_url": "https://quotes.toscrape.com/scroll",
+    "title": "“It matters not what someone is born, but what they grow to be.”",
+    "price": null,
+    "item_url": "https://quotes.toscrape.com/scroll",
+    "scraped_at": "2026-10-25T06:56:32.512882",
+    "extra_data": {
+      "author": "J.K. Rowling",
+      "tags": [
+        "dumbledore"
+      ]
+    }
+  },
+  {
+    "id": 50,
+    "job_id": 1,
+    "target_url": "https://quotes.toscrape.com/scroll",
+    "title": "“Love does not begin and end the way we seem to think it does. Love is a battle, love is a war; love is a growing up.”",
+    "price": null,
+    "item_url": "https://quotes.toscrape.com/scroll",
+    "scraped_at": "2026-10-25T06:56:32.512896",
+    "extra_data": {
+      "author": "James Baldwin",
+      "tags": [
+        "love"
+      ]
+    }
+  },
+  {
+    "id": 51,
+    "job_id": 1,
+    "target_url": "https://quotes.toscrape.com/scroll",
+    "title": "“There is nothing I would not do for those who are really my friends. I have no notion of loving people by halves, it is not my nature.”",
+    "price": null,
+    "item_url": "https://quotes.toscrape.com/scroll",
+    "scraped_at": "2026-10-25T06:56:32.512910",
+    "extra_data": {
+      "author": "Jane Austen",
+      "tags": [
+        "friendship",
+        "love"
+      ]
+    }
+  },
+  {
+    "id": 52,
+    "job_id": 1,
+    "target_url": "https://quotes.toscrape.com/scroll",
+    "title": "“Do one thing every day that scares you.”",
+    "price": null,
+    "item_url": "https://quotes.toscrape.com/scroll",
+    "scraped_at": "2026-10-25T06:56:32.512924",
+    "extra_data": {
+      "author": "Eleanor Roosevelt",
+      "tags": [
+        "attributed",
+        "fear",
+        "inspiration"
+      ]
+    }
+  },
+  {
+    "id": 53,
+    "job_id": 1,
+    "target_url": "https://quotes.toscrape.com/scroll",
+    "title": "“I am good, but not an angel. I do sin, but I am not the devil. I am just a small girl in a big world trying to find someone to love.”",
+    "price": null,
+    "item_url": "https://quotes.toscrape.com/scroll",
+    "scraped_at": "2026-10-25T06:56:32.512938",
+    "extra_data": {
+      "author": "Marilyn Monroe",
+      "tags": [
+        "attributed-no-source"
+      ]
+    }
+  },
+  {
+    "id": 54,
+    "job_id": 1,
+    "target_url": "https://quotes.toscrape.com/scroll",
+    "title": "“If I were not a physicist, I would probably be a musician. I often think in music. I live my daydreams in music. I see my life in terms of music.”",
+    "price": null,
+    "item_url": "https://quotes.toscrape.com/scroll",
+    "scraped_at": "2026-10-25T06:56:32.512952",
+    "extra_data": {
+      "author": "Albert Einstein",
+      "tags": [
+        "music"
+      ]
+    }
+  },
+  {
+    "id": 55,
+    "job_id": 1,
+    "target_url": "https://quotes.toscrape.com/scroll",
+    "title": "“If you only read the books that everyone else is reading, you can only think what everyone else is thinking.”",
+    "price": null,
+    "item_url": "https://quotes.toscrape.com/scroll",
+    "scraped_at": "2026-10-25T06:56:32.512967",
+    "extra_data": {
+      "author": "Haruki Murakami",
+      "tags": [
+        "books",
+        "thought"
+      ]
+    }
+  },
+  {
+    "id": 56,
+    "job_id": 1,
+    "target_url": "https://quotes.toscrape.com/scroll",
+    "title": "“The difference between genius and stupidity is: genius has its limits.”",
+    "price": null,
+    "item_url": "https://quotes.toscrape.com/scroll",
+    "scraped_at": "2026-10-25T06:56:32.513000",
+    "extra_data": {
+      "author": "Alexandre Dumas fils",
+      "tags": [
+        "misattributed-to-einstein"
+      ]
+    }
+  },
+  {
+    "id": 57,
+    "job_id": 1,
+    "target_url": "https://quotes.toscrape.com/scroll",
+    "title": "“He's like a drug for you, Bella.”",
+    "price": null,
+    "item_url": "https://quotes.toscrape.com/scroll",
+    "scraped_at": "2026-10-25T06:56:32.513017",
+    "extra_data": {
+      "author": "Stephenie Meyer",
+      "tags": [
+        "drug",
+        "romance",
+        "simile"
+      ]
+    }
+  },
+  {
+    "id": 58,
+    "job_id": 1,
+    "target_url": "https://quotes.toscrape.com/scroll",
+    "title": "“There is no friend as loyal as a book.”",
+    "price": null,
+    "item_url": "https://quotes.toscrape.com/scroll",
+    "scraped_at": "2026-10-25T06:56:32.513036",
+    "extra_data": {
+      "author": "Ernest Hemingway",
+      "tags": [
+        "books",
+        "friends",
+        "novelist-quotes"
+      ]
+    }
+  },
+  {
+    "id": 59,
+    "job_id": 1,
+    "target_url": "https://quotes.toscrape.com/scroll",
+    "title": "“When one door of happiness closes, another opens; but often we look so long at the closed door that we do not see the one which has been opened for us.”",
+    "price": null,
+    "item_url": "https://quotes.toscrape.com/scroll",
+    "scraped_at": "2026-10-25T06:56:32.513055",
+    "extra_data": {
+      "author": "Helen Keller",
+      "tags": [
+        "inspirational"
+      ]
+    }
+  },
+  {
+    "id": 60,
+    "job_id": 1,
+    "target_url": "https://quotes.toscrape.com/scroll",
+    "title": "“Life isn't about finding yourself. Life is about creating yourself.”",
+    "price": null,
+    "item_url": "https://quotes.toscrape.com/scroll",
+    "scraped_at": "2026-10-25T06:56:32.513070",
+    "extra_data": {
+      "author": "George Bernard Shaw",
+      "tags": [
+        "inspirational",
+        "life",
+        "yourself"
+      ]
+    }
+  },
+  {
+    "id": 61,
+    "job_id": 2,
+    "target_url": "http://books.toscrape.com/",
+    "title": "A Light in the Attic",
+    "price": 51.77,
+    "item_url": "http://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html",
+    "scraped_at": "2026-10-25T06:56:34.421336",
+    "extra_data": {
+      "availability": "In stock",
+      "rating": "Three"
+    }
+  },
+  {
+    "id": 62,
+    "job_id": 2,
+    "target_url": "http://books.toscrape.com/",
+    "title": "Tipping the Velvet",
+    "price": 53.74,
+    "item_url": "http://books.toscrape.com/catalogue/tipping-the-velvet_999/index.html",
+    "scraped_at": "2026-10-25T06:56:34.421430",
+    "extra_data": {
+      "availability": "In stock",
+      "rating": "One"
+    }
+  },
+  {
+    "id": 63,
+    "job_id": 2,
+    "target_url": "http://books.toscrape.com/",
+    "title": "Soumission",
+    "price": 50.1,
+    "item_url": "http://books.toscrape.com/catalogue/soumission_998/index.html",
+    "scraped_at": "2026-10-25T06:56:34.421463",
+    "extra_data": {
+      "availability": "In stock",
+      "rating": "One"
+    }
+  },
+  {
+    "id": 64,
+    "job_id": 2,
+    "target_url": "http://books.toscrape.com/",
+    "title": "Sharp Objects",
+    "price": 47.82,
+    "item_url": "http://books.toscrape.com/catalogue/sharp-objects_997/index.html",
+    "scraped_at": "2026-10-25T06:56:34.421487",
+    "extra_data": {
+      "availability": "In stock",
+      "rating": "Four"
+    }
+  },
+  {
+    "id": 65,
+    "job_id": 2,
+    "target_url": "http://books.toscrape.com/",
+    "title": "Sapiens: A Brief History of Humankind",
+    "price": 54.23,
+    "item_url": "http://books.toscrape.com/catalogue/sapiens-a-brief-history-of-humankind_996/index.html",
+    "scraped_at": "2026-10-25T06:56:34.421508",
+    "extra_data": {
+      "availability": "In stock",
+      "rating": "Five"
+    }
+  },
+  {
+    "id": 66,
+    "job_id": 2,
+    "target_url": "http://books.toscrape.com/",
+    "title": "The Requiem Red",
+    "price": 22.65,
+    "item_url": "http://books.toscrape.com/catalogue/the-requiem-red_995/index.html",
+    "scraped_at": "2026-10-25T06:56:34.421526",
+    "extra_data": {
+      "availability": "In stock",
+      "rating": "One"
+    }
+  },
+  {
+    "id": 67,
+    "job_id": 2,
+    "target_url": "http://books.toscrape.com/",
+    "title": "The Dirty Little Secrets of Getting Your Dream Job",
+    "price": 33.34,
+    "item_url": "http://books.toscrape.com/catalogue/the-dirty-little-secrets-of-getting-your-dream-job_994/index.html",
+    "scraped_at": "2026-10-25T06:56:34.421553",
+    "extra_data": {
+      "availability": "In stock",
+      "rating": "Four"
+    }
+  },
+  {
+    "id": 68,
+    "job_id": 2,
+    "target_url": "http://books.toscrape.com/",
+    "title": "The Coming Woman: A Novel Based on the Life of the Infamous Feminist, Victoria Woodhull",
+    "price": 17.93,
+    "item_url": "http://books.toscrape.com/catalogue/the-coming-woman-a-novel-based-on-the-life-of-the-infamous-feminist-victoria-woodhull_993/index.html",
+    "scraped_at": "2026-10-25T06:56:34.421579",
+    "extra_data": {
+      "availability": "In stock",
+      "rating": "Three"
+    }
+  },
+  {
+    "id": 69,
+    "job_id": 2,
+    "target_url": "http://books.toscrape.com/",
+    "title": "The Boys in the Boat: Nine Americans and Their Epic Quest for Gold at the 1936 Berlin Olympics",
+    "price": 22.6,
+    "item_url": "http://books.toscrape.com/catalogue/the-boys-in-the-boat-nine-americans-and-their-epic-quest-for-gold-at-the-1936-berlin-olympics_992/index.html",
+    "scraped_at": "2026-10-25T06:56:34.421600",
+    "extra_data": {
+      "availability": "In stock",
+      "rating": "Four"
+    }
+  },
+  {
+    "id": 70,
+    "job_id": 2,
+    "target_url": "http://books.toscrape.com/",
+    "title": "The Black Maria",
+    "price": 52.15,
+    "item_url": "http://books.toscrape.com/catalogue/the-black-maria_991/index.html",
+    "scraped_at": "2026-10-25T06:56:34.421619",
+    "extra_data": {
+      "availability": "In stock",
+      "rating": "One"
+    }
+  },
+  {
+    "id": 71,
+    "job_id": 2,
+    "target_url": "http://books.toscrape.com/",
+    "title": "Starving Hearts (Triangular Trade Trilogy, #1)",
+    "price": 13.99,
+    "item_url": "http://books.toscrape.com/catalogue/starving-hearts-triangular-trade-trilogy-1_990/index.html",
+    "scraped_at": "2026-10-25T06:56:34.421636",
+    "extra_data": {
+      "availability": "In stock",
+      "rating": "Two"
+    }
+  },
+  {
+    "id": 72,
+    "job_id": 2,
+    "target_url": "http://books.toscrape.com/",
+    "title": "Shakespeare's Sonnets",
+    "price": 20.66,
+    "item_url": "http://books.toscrape.com/catalogue/shakespeares-sonnets_989/index.html",
+    "scraped_at": "2026-10-25T06:56:34.421653",
+    "extra_data": {
+      "availability": "In stock",
+      "rating": "Four"
+    }
+  },
+  {
+    "id": 73,
+    "job_id": 2,
+    "target_url": "http://books.toscrape.com/",
+    "title": "Set Me Free",
+    "price": 17.46,
+    "item_url": "http://books.toscrape.com/catalogue/set-me-free_988/index.html",
+    "scraped_at": "2026-10-25T06:56:34.421672",
+    "extra_data": {
+      "availability": "In stock",
+      "rating": "Five"
+    }
+  },
+  {
+    "id": 74,
+    "job_id": 2,
+    "target_url": "http://books.toscrape.com/",
+    "title": "Scott Pilgrim's Precious Little Life (Scott Pilgrim #1)",
+    "price": 52.29,
+    "item_url": "http://books.toscrape.com/catalogue/scott-pilgrims-precious-little-life-scott-pilgrim-1_987/index.html",
+    "scraped_at": "2026-10-25T06:56:34.421693",
+    "extra_data": {
+      "availability": "In stock",
+      "rating": "Five"
+    }
+  },
+  {
+    "id": 75,
+    "job_id": 2,
+    "target_url": "http://books.toscrape.com/",
+    "title": "Rip it Up and Start Again",
+    "price": 35.02,
+    "item_url": "http://books.toscrape.com/catalogue/rip-it-up-and-start-again_986/index.html",
+    "scraped_at": "2026-10-25T06:56:34.421712",
+    "extra_data": {
+      "availability": "In stock",
+      "rating": "Five"
+    }
+  },
+  {
+    "id": 76,
+    "job_id": 2,
+    "target_url": "http://books.toscrape.com/",
+    "title": "Our Band Could Be Your Life: Scenes from the American Indie Underground, 1981-1991",
+    "price": 57.25,
+    "item_url": "http://books.toscrape.com/catalogue/our-band-could-be-your-life-scenes-from-the-american-indie-underground-1981-1991_985/index.html",
+    "scraped_at": "2026-10-25T06:56:34.421729",
+    "extra_data": {
+      "availability": "In stock",
+      "rating": "Three"
+    }
+  },
+  {
+    "id": 77,
+    "job_id": 2,
+    "target_url": "http://books.toscrape.com/",
+    "title": "Olio",
+    "price": 23.88,
+    "item_url": "http://books.toscrape.com/catalogue/olio_984/index.html",
+    "scraped_at": "2026-10-25T06:56:34.421745",
+    "extra_data": {
+      "availability": "In stock",
+      "rating": "One"
+    }
+  },
+  {
+    "id": 78,
+    "job_id": 2,
+    "target_url": "http://books.toscrape.com/",
+    "title": "Mesaerion: The Best Science Fiction Stories 1800-1849",
+    "price": 37.59,
+    "item_url": "http://books.toscrape.com/catalogue/mesaerion-the-best-science-fiction-stories-1800-1849_983/index.html",
+    "scraped_at": "2026-10-25T06:56:34.421760",
+    "extra_data": {
+      "availability": "In stock",
+      "rating": "One"
+    }
+  },
+  {
+    "id": 79,
+    "job_id": 2,
+    "target_url": "http://books.toscrape.com/",
+    "title": "Libertarianism for Beginners",
+    "price": 51.33,
+    "item_url": "http://books.toscrape.com/catalogue/libertarianism-for-beginners_982/index.html",
+    "scraped_at": "2026-10-25T06:56:34.421777",
+    "extra_data": {
+      "availability": "In stock",
+      "rating": "Two"
+    }
+  },
+  {
+    "id": 80,
+    "job_id": 2,
+    "target_url": "http://books.toscrape.com/",
+    "title": "It's Only the Himalayas",
+    "price": 45.17,
+    "item_url": "http://books.toscrape.com/catalogue/its-only-the-himalayas_981/index.html",
+    "scraped_at": "2026-10-25T06:56:34.421793",
+    "extra_data": {
+      "availability": "In stock",
+      "rating": "Two"
     }
   }
 ]
