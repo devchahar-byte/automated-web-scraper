@@ -1,0 +1,44 @@
+version: '3.8'
+
+services:
+  redis:
+    image: redis:7-alpine
+    container_name: scraper-redis
+    ports:
+      - "6379:6379"
+    restart: unless-stopped
+    volumes:
+      - redis_data:/data
+
+  celery_worker:
+    build: .
+    container_name: scraper-celery-worker
+    command: celery -A scraper.celery_app worker --loglevel=info --concurrency=2
+    depends_on:
+      - redis
+    volumes:
+      - .:/app
+    environment:
+      - CELERY_BROKER_URL=redis://redis:6379/0
+      - CELERY_RESULT_BACKEND=redis://redis:6379/0
+      - SCRAPER_DB_PATH=/app/data/scraper.db
+      - SELENIUM_HEADLESS=true
+    restart: unless-stopped
+
+  celery_beat:
+    build: .
+    container_name: scraper-celery-beat
+    command: celery -A scraper.celery_app beat --loglevel=info
+    depends_on:
+      - redis
+      - celery_worker
+    volumes:
+      - .:/app
+    environment:
+      - CELERY_BROKER_URL=redis://redis:6379/0
+      - CELERY_RESULT_BACKEND=redis://redis:6379/0
+      - SCRAPER_DB_PATH=/app/data/scraper.db
+    restart: unless-stopped
+
+volumes:
+  redis_data:
