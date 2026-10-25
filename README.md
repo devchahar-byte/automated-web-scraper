@@ -6,6 +6,8 @@ An enterprise-ready, automated web scraping tool built with **Python**, **Seleni
 
 ## 🚀 Key Features
 
+- **Live Web Page Dashboard (GitHub Pages Ready)**: Instant, responsive interactive web dashboard in `docs/index.html` with real-time metrics, search, sorting, card/table views, and direct CSV/JSON downloads.
+- **Git-Scraping Automation**: Integrated `.github/workflows/scrape_and_publish.yml` that runs on a schedule (cron), executes dynamic Selenium scrapers, saves to SQLite, generates fresh datasets, and publishes directly to GitHub Pages automatically.
 - **Dynamic JavaScript Rendering**: Powered by Selenium (headless Chrome/Edge) to handle client-rendered SPA frameworks, infinite scrolling, and delayed DOM elements.
 - **High-Performance Parsing**: Combines Selenium DOM capture with BeautifulSoup4 for resilient, high-speed HTML tree parsing.
 - **Dual Scheduling Modes**:
@@ -13,7 +15,7 @@ An enterprise-ready, automated web scraping tool built with **Python**, **Seleni
   - **Standalone Loop Scheduler**: Lightweight, zero-dependency in-process scheduler using `schedule` (runs out of the box without requiring Redis).
 - **SQLite Database Persistence**: Full schema management via SQLAlchemy ORM tracking job execution runs, statuses (`PENDING`, `RUNNING`, `COMPLETED`, `FAILED`), and structured records with JSON payload support.
 - **Data Exporting**: Instant export of raw or job-filtered datasets to CSV or JSON formats.
-- **CLI Utility**: Intuitive terminal commands for scraping, scheduling, inspecting historical jobs, reviewing records, and exporting data.
+- **CLI Utility**: Intuitive terminal commands for scraping, scheduling, inspecting historical jobs, reviewing records, serving the web dashboard, and exporting data.
 - **Docker & Compose Ready**: Pre-configured `Dockerfile` and `docker-compose.yml` bundling the application, Celery workers, Celery beat, and Redis.
 
 ---
@@ -57,13 +59,19 @@ An enterprise-ready, automated web scraping tool built with **Python**, **Seleni
 
 ```
 automated-web-scraper/
-├── .gitignore               # Ignored files, virtualenv, and databases
-├── Dockerfile               # Container definition with Chromium
-├── docker-compose.yml       # Orchestrates Redis + Celery Worker + Celery Beat
-├── requirements.txt         # Project dependencies
-├── config.py                # Environment and application configuration
-├── pytest.ini               # Pytest configuration
-├── cli.py                   # Unified CLI entrypoint
+├── .github/workflows/
+│   └── scrape_and_publish.yml # Automated CI/CD cron scraper & GitHub Pages publisher
+├── docs/                     # Live Web Page Dashboard (GitHub Pages root)
+│   ├── index.html            # Interactive web app (Tailwind CSS, search, filters)
+│   ├── data.json             # Live dataset stream consumed by the dashboard
+│   └── data.csv              # Downloadable CSV dataset
+├── .gitignore                # Ignored files, virtualenv, and databases
+├── Dockerfile                # Container definition with Chromium
+├── docker-compose.yml        # Orchestrates Redis + Celery Worker + Celery Beat
+├── requirements.txt          # Project dependencies
+├── config.py                 # Environment and application configuration
+├── pytest.ini                # Pytest configuration
+├── cli.py                    # Unified CLI entrypoint (includes 'web' server)
 ├── scraper/
 │   ├── __init__.py
 │   ├── database.py          # SQLAlchemy models (Job, ScrapedItem) & sessions
@@ -86,6 +94,39 @@ automated-web-scraper/
     ├── exports/             # Default destination for generated CSV/JSON
     └── scraper.db           # SQLite database file (auto-generated)
 ```
+
+---
+
+## 🌐 Live Web Page & GitHub Pages Publishing
+
+This project is pre-configured to be **100% Live Web Page compatible** out of the box when published to GitHub:
+
+### Step-by-Step Publishing Guide
+
+1. **Create a new repository on GitHub** (e.g. `automated-web-scraper`).
+2. **Push your code**:
+   ```bash
+   git remote add origin https://github.com/<your-username>/automated-web-scraper.git
+   git branch -M main
+   git push -u origin main
+   ```
+3. **Enable GitHub Pages**:
+   - Go to your repository on GitHub.
+   - Navigate to **Settings** > **Pages**.
+   - Under **Build and deployment** > **Source**, choose **GitHub Actions** (recommended) or select **Deploy from a branch** > branch `main` and folder `/docs`.
+4. **Enjoy Automated Live Scraping**:
+   - The included workflow `.github/workflows/scrape_and_publish.yml` will automatically run every 6 hours (and can also be triggered manually in the Actions tab).
+   - It runs headless Chrome, executes dynamic scraping, saves to SQLite, generates fresh `docs/data.json` & `docs/data.csv`, commits updates, and deploys your live web page at:
+     ```
+     https://<your-username>.github.io/automated-web-scraper/
+     ```
+
+### Local Preview of the Live Web Dashboard
+You can preview the live web page on your local computer anytime:
+```bash
+python cli.py web
+```
+This automatically opens `http://localhost:8000` with the interactive dashboard, search bar, and CSV/JSON downloads.
 
 ---
 

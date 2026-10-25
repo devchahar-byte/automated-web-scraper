@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Automated Web Scraper Dashboard</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🕷️</text></svg>">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#eef2ff',
+              100: '#e0e7ff',
+              500: '#6366f1',
+              600: '#4f46e5',
+              700: '#4338ca',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    @keyframes pulse-slow {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+    .animate-pulse-slow {
+      animation: pulse-slow 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+  </style>
+</head>
+<body class="bg-slate-900 text-slate-100 min-h-screen font-sans antialiased selection:bg-brand-500 selection:text-white">
+
+  <!-- Top Navigation -->
+  <header class="border-b border-slate-800 bg-slate-950/80 backdrop-blur sticky top-0 z-40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <span class="text-2xl">🕷️</span>
+        <div>
+          <h1 class="font-bold text-lg text-white leading-tight">Automated Web Scraper</h1>
+          <p class="text-xs text-slate-400">Selenium • Celery • SQLite • GitHub Pages</p>
+        </div>
+      </div>
+      <div class="flex items-center space-x-3">
+        <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 mr-1.5 animate-pulse-slow"></span>
+          Live Synchronized
+        </span>
+        <a href="https://github.com" target="_blank" id="repoLink" class="hidden sm:inline-flex items-center px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-800 hover:bg-slate-700 text-slate-200 transition border border-slate-700">
+          GitHub Repo
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero & Metrics Section -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
+    
+    <!-- Top Banner -->
+    <div class="bg-gradient-to-r from-brand-600/20 via-slate-800/40 to-slate-800/20 border border-brand-500/20 rounded-2xl p-6 sm:p-8 backdrop-blur">
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+        <div>
+          <h2 class="text-2xl font-extrabold text-white sm:text-3xl">Live Automated Data Collection</h2>
+          <p class="mt-1 text-sm text-slate-400 max-w-2xl">
+            Harvested dynamically via Selenium headless browser, scheduled periodically with Celery Beat and GitHub Actions, and persisted to SQLite with live CSV/JSON publishing.
+          </p>
+        </div>
+        <div class="flex flex-wrap items-center gap-2">
+          <a href="data.csv" download="scraped_data.csv" class="inline-flex items-center px-4 py-2 rounded-xl text-xs font-semibold bg-brand-600 hover:bg-brand-500 text-white shadow-lg shadow-brand-500/20 transition">
+            <svg class="w-4 h-4 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+            Export CSV
+          </a>
+          <a href="data.json" download="scraped_data.json" class="inline-flex items-center px-4 py-2 rounded-xl text-xs font-semibold bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 transition">
+            <svg class="w-4 h-4 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+            Export JSON
+          </a>
+        </div>
+      </div>
+
+      <!-- KPI Cards -->
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mt-6">
+        <div class="bg-slate-900/80 border border-slate-800 p-4 rounded-xl">
+          <p class="text-xs font-medium text-slate-400 uppercase tracking-wider">Total Harvested Items</p>
+          <p id="metricTotal" class="text-2xl font-bold text-white mt-1">--</p>
+        </div>
+        <div class="bg-slate-900/80 border border-slate-800 p-4 rounded-xl">
+          <p class="text-xs font-medium text-slate-400 uppercase tracking-wider">Scrape Engine</p>
+          <p class="text-2xl font-bold text-emerald-400 mt-1">Selenium + BS4</p>
+        </div>
+        <div class="bg-slate-900/80 border border-slate-800 p-4 rounded-xl">
+          <p class="text-xs font-medium text-slate-400 uppercase tracking-wider">Periodic Schedule</p>
+          <p class="text-2xl font-bold text-brand-400 mt-1">Hourly / Beat</p>
+        </div>
+        <div class="bg-slate-900/80 border border-slate-800 p-4 rounded-xl">
+          <p class="text-xs font-medium text-slate-400 uppercase tracking-wider">Last Sync</p>
+          <p id="metricLastSync" class="text-sm font-semibold text-slate-300 mt-2 truncate">Checking...</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Data Controls Bar -->
+    <div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-4">
+      <div class="relative flex-1 max-w-md">
+        <input 
+          type="text" 
+          id="searchInput" 
+          placeholder="Search by title, author, keyword, or URL..." 
+          class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-2.5 pl-10 text-sm text-slate-200 placeholder-slate-500 focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 transition"
+        >
+        <svg class="w-4 h-4 text-slate-500 absolute left-3.5 top-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+      </div>
+
+      <div class="flex items-center space-x-2">
+        <select id="sortSelect" class="bg-slate-950 border border-slate-800 rounded-xl px-3 py-2 text-xs font-medium text-slate-300 focus:outline-none focus:border-brand-500">
+          <option value="default">Sort: Default</option>
+          <option value="title_asc">Title: A-Z</option>
+          <option value="title_desc">Title: Z-A</option>
+          <option value="price_low">Price: Low to High</option>
+          <option value="price_high">Price: High to Low</option>
+        </select>
+        
+        <div class="bg-slate-950 border border-slate-800 p-1 rounded-xl flex items-center space-x-1">
+          <button id="viewGridBtn" class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-brand-600 text-white transition">Cards</button>
+          <button id="viewTableBtn" class="px-3 py-1.5 rounded-lg text-xs font-semibold text-slate-400 hover:text-white transition">Table</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Data Container -->
+    <div id="loadingState" class="py-16 text-center">
+      <div class="inline-block animate-spin w-8 h-8 border-4 border-brand-500 border-t-transparent rounded-full mb-3"></div>
+      <p class="text-sm text-slate-400">Loading scraped data stream...</p>
+    </div>
+
+    <!-- Cards Grid View -->
+    <div id="itemsGrid" class="hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+
+    <!-- Table View -->
+    <div id="itemsTableContainer" class="hidden overflow-x-auto bg-slate-950 border border-slate-800 rounded-2xl shadow-xl">
+      <table class="w-full text-left border-collapse text-sm">
+        <thead>
+          <tr class="border-b border-slate-800 text-xs uppercase tracking-wider text-slate-400 bg-slate-900/50">
+            <th class="py-3 px-4">#</th>
+            <th class="py-3 px-4">Title / Text</th>
+            <th class="py-3 px-4">Price</th>
+            <th class="py-3 px-4">Author / Metadata</th>
+            <th class="py-3 px-4">Source URL</th>
+          </tr>
+        </thead>
+        <tbody id="itemsTableBody" class="divide-y divide-slate-800/50 text-slate-300"></tbody>
+      </table>
+    </div>
+
+    <!-- Empty State -->
+    <div id="emptyState" class="hidden py-16 text-center bg-slate-950 border border-slate-800 rounded-2xl p-8">
+      <span class="text-4xl">🔍</span>
+      <h3 class="text-lg font-bold text-white mt-3">No matching records found</h3>
+      <p class="text-sm text-slate-400 mt-1">Try adjusting your search query or clear the filter.</p>
+    </div>
+
+    <!-- Architecture & Workflow Info -->
+    <div class="border border-slate-800 bg-slate-950 rounded-2xl p-6 space-y-4">
+      <h3 class="font-bold text-white text-base flex items-center">
+        <span class="w-2 h-2 rounded-full bg-brand-500 mr-2"></span>
+        Automated Git-Scraping Workflow
+      </h3>
+      <p class="text-sm text-slate-400 leading-relaxed">
+        This web page is hosted directly via <strong>GitHub Pages</strong>. When published to your Git repository, the included <code class="text-brand-300 bg-slate-900 px-1.5 py-0.5 rounded">.github/workflows/scrape_and_publish.yml</code> workflow periodically runs the headless Selenium browser on schedule, updates SQLite, regenerates <code class="text-brand-300 bg-slate-900 px-1.5 py-0.5 rounded">docs/data.json</code> &amp; <code class="text-brand-300 bg-slate-900 px-1.5 py-0.5 rounded">docs/data.csv</code>, and deploys the live webpage automatically without manual intervention.
+      </p>
+    </div>
+
+  </main>
+
+  <footer class="border-t border-slate-800 mt-12 py-6 text-center text-xs text-slate-500">
+    Automated Web Scraper with Scheduler • Python, Selenium, Celery &amp; SQLite
+  </footer>
+
+  <script>
+    let allItems = [];
+    let currentView = 'grid';
+
+    async function loadData() {
+      try {
+        const resp = await fetch('data.json?v=' + Date.now());
+        if (!resp.ok) throw new Error("Status " + resp.status);
+        allItems = await resp.json();
+      } catch (err) {
+        console.warn("Could not fetch data.json directly, falling back to embedded sample data:", err);
+        // Fallback sample data if opened via file:// or without webserver
+        allItems = [
+          {
+            id: 1,
+            title: "“The world as we have created it is a process of our thinking. It cannot be changed without changing our thinking.”",
+            price: null,
+            item_url: "https://quotes.toscrape.com/author/Albert-Einstein",
+            scraped_at: new Date().toISOString(),
+            extra_data: { author: "Albert Einstein", tags: ["change", "thinking", "world"] }
+          },
+          {
+            id: 2,
+            title: "“It is our choices, Harry, that show what we truly are, far more than our abilities.”",
+            price: null,
+            item_url: "https://quotes.toscrape.com/author/J-K-Rowling",
+            scraped_at: new Date().toISOString(),
+            extra_data: { author: "J.K. Rowling", tags: ["choices", "abilities"] }
+          },
+          {
+            id: 3,
+            title: "A Light in the Attic",
+            price: 51.77,
+            item_url: "http://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html",
+            scraped_at: new Date().toISOString(),
+            extra_data: { availability: "In stock", rating: "Three" }
+          }
+        ];
+      }
+
+      document.getElementById('loadingState').classList.add('hidden');
+      updateMetrics();
+      renderItems();
+    }
+
+    function updateMetrics() {
+      document.getElementById('metricTotal').textContent = allItems.length;
+      if (allItems.length > 0) {
+        const latestDate = allItems[0].scraped_at ? new Date(allItems[0].scraped_at) : new Date();
+        document.getElementById('metricLastSync').textContent = latestDate.toLocaleDateString() + ' ' + latestDate.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+      } else {
+        document.getElementById('metricLastSync').textContent = 'Pending First Run';
+      }
+    }
+
+    function getFilteredAndSorted() {
+      const q = document.getElementById('searchInput').value.toLowerCase().trim();
+      let filtered = allItems.filter(item => {
+        const titleMatch = (item.title || '').toLowerCase().includes(q);
+        const urlMatch = (item.item_url || '').toLowerCase().includes(q);
+        const extraMatch = item.extra_data ? JSON.stringify(item.extra_data).toLowerCase().includes(q) : false;
+        return titleMatch || urlMatch || extraMatch;
+      });
+
+      const sortMode = document.getElementById('sortSelect').value;
+      if (sortMode === 'title_asc') {
+        filtered.sort((a, b) => (a.title || '').localeCompare(b.title || ''));
+      } else if (sortMode === 'title_desc') {
+        filtered.sort((a, b) => (b.title || '').localeCompare(a.title || ''));
+      } else if (sortMode === 'price_low') {
+        filtered.sort((a, b) => (a.price || 0) - (b.price || 0));
+      } else if (sortMode === 'price_high') {
+        filtered.sort((a, b) => (b.price || 0) - (a.price || 0));
+      }
+
+      return filtered;
+    }
+
+    function renderItems() {
+      const items = getFilteredAndSorted();
+      const grid = document.getElementById('itemsGrid');
+      const tableBody = document.getElementById('itemsTableBody');
+      const tableContainer = document.getElementById('itemsTableContainer');
+      const emptyState = document.getElementById('emptyState');
+
+      if (items.length === 0) {
+        grid.classList.add('hidden');
+        tableContainer.classList.add('hidden');
+        emptyState.classList.remove('hidden');
+        return;
+      }
+
+      emptyState.classList.add('hidden');
+
+      if (currentView === 'grid') {
+        grid.classList.remove('hidden');
+        tableContainer.classList.add('hidden');
+
+        grid.innerHTML = items.map(item => {
+          const tags = item.extra_data?.tags || [];
+          const author = item.extra_data?.author || '';
+          const availability = item.extra_data?.availability || '';
+          const priceDisplay = item.price !== null && item.price !== undefined ? `$${Number(item.price).toFixed(2)}` : null;
+
+          return `
+            <div class="bg-slate-950 border border-slate-800 rounded-2xl p-5 hover:border-slate-700 transition flex flex-col justify-between shadow-lg">
+              <div>
+                <div class="flex items-center justify-between gap-2 mb-2">
+                  <span class="text-xs font-mono text-slate-500">#${item.id}</span>
+                  ${priceDisplay ? `<span class="px-2.5 py-1 rounded-lg text-xs font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">${priceDisplay}</span>` : ''}
+                </div>
+                <h4 class="font-semibold text-slate-100 text-sm line-clamp-3 mb-2">${escapeHtml(item.title || 'Untitled')}</h4>
+                ${author ? `<p class="text-xs text-brand-400 font-medium mb-2">— ${escapeHtml(author)}</p>` : ''}
+                ${availability ? `<p class="text-xs text-emerald-400 mb-2">Status: ${escapeHtml(availability)}</p>` : ''}
+                
+                ${tags.length > 0 ? `
+                  <div class="flex flex-wrap gap-1.5 mt-2">
+                    ${tags.map(t => `<span class="px-2 py-0.5 rounded-md text-[10px] bg-slate-900 border border-slate-800 text-slate-400 font-medium">#${escapeHtml(t)}</span>`).join('')}
+                  </div>
+                ` : ''}
+              </div>
+
+              <div class="mt-4 pt-3 border-t border-slate-800/80 flex items-center justify-between text-xs">
+                <span class="text-slate-500 text-[11px]">${item.scraped_at ? new Date(item.scraped_at).toLocaleDateString() : ''}</span>
+                <a href="${item.item_url}" target="_blank" rel="noopener noreferrer" class="text-brand-400 hover:text-brand-300 font-medium inline-flex items-center transition">
+                  Visit Source
+                  <svg class="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                </a>
+              </div>
+            </div>
+          `;
+        }).join('');
+      } else {
+        grid.classList.add('hidden');
+        tableContainer.classList.remove('hidden');
+
+        tableBody.innerHTML = items.map(item => {
+          const author = item.extra_data?.author || '-';
+          const priceDisplay = item.price !== null && item.price !== undefined ? `$${Number(item.price).toFixed(2)}` : '-';
+
+          return `
+            <tr class="hover:bg-slate-900/50 transition">
+              <td class="py-3 px-4 font-mono text-xs text-slate-500">${item.id}</td>
+              <td class="py-3 px-4 font-medium text-slate-200 max-w-xs truncate">${escapeHtml(item.title || 'Untitled')}</td>
+              <td class="py-3 px-4 font-semibold text-emerald-400">${priceDisplay}</td>
+              <td class="py-3 px-4 text-xs text-slate-400">${escapeHtml(author)}</td>
+              <td class="py-3 px-4 text-xs">
+                <a href="${item.item_url}" target="_blank" rel="noopener noreferrer" class="text-brand-400 hover:underline truncate block max-w-[200px]">
+                  ${escapeHtml(item.item_url || '')}
+                </a>
+              </td>
+            </tr>
+          `;
+        }).join('');
+      }
+    }
+
+    function escapeHtml(str) {
+      return String(str).replace(/[&<>'"]/g, tag => ({
+        '&': '&amp;',
+        '<': '&lt;',
+        '>': '&gt;',
+        "'": '&#39;',
+        '"': '&quot;'
+      }[tag] || tag));
+    }
+
+    // View toggle listeners
+    document.getElementById('viewGridBtn').addEventListener('click', () => {
+      currentView = 'grid';
+      document.getElementById('viewGridBtn').className = "px-3 py-1.5 rounded-lg text-xs font-semibold bg-brand-600 text-white transition";
+      document.getElementById('viewTableBtn').className = "px-3 py-1.5 rounded-lg text-xs font-semibold text-slate-400 hover:text-white transition";
+      renderItems();
+    });
+
+    document.getElementById('viewTableBtn').addEventListener('click', () => {
+      currentView = 'table';
+      document.getElementById('viewTableBtn').className = "px-3 py-1.5 rounded-lg text-xs font-semibold bg-brand-600 text-white transition";
+      document.getElementById('viewGridBtn').className = "px-3 py-1.5 rounded-lg text-xs font-semibold text-slate-400 hover:text-white transition";
+      renderItems();
+    });
+
+    document.getElementById('searchInput').addEventListener('input', renderItems);
+    document.getElementById('sortSelect').addEventListener('change', renderItems);
+
+    window.addEventListener('DOMContentLoaded', loadData);
+  </script>
+</body>
+</html>

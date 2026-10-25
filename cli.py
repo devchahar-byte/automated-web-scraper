@@ -94,6 +94,35 @@ def cmd_export(args):
     print(f"Export created successfully: {out}")
 
 
+def cmd_web(args):
+    """Serve the live web dashboard locally."""
+    import http.server
+    import socketserver
+    import webbrowser
+    from pathlib import Path
+
+    docs_dir = Path(__file__).resolve().parent / "docs"
+    port = args.port
+
+    class Handler(http.server.SimpleHTTPRequestHandler):
+        def __init__(self, *a, **kw):
+            super().__init__(*a, directory=str(docs_dir), **kw)
+
+    print(f"=== Live Web Scraper Dashboard ===")
+    print(f"Serving dashboard from: {docs_dir}")
+    print(f"Live URL: http://localhost:{port}")
+    print("Press Ctrl+C to stop.\n")
+
+    if not args.no_browser:
+        webbrowser.open(f"http://localhost:{port}")
+
+    with socketserver.TCPServer(("", port), Handler) as httpd:
+        try:
+            httpd.serve_forever()
+        except KeyboardInterrupt:
+            print("\nDashboard server stopped.")
+
+
 def main():
     parser = argparse.ArgumentParser(description="Automated Dynamic Web Scraper with Scheduler & SQLite")
     subparsers = parser.add_subparsers(dest="command", help="Available subcommands")
@@ -141,6 +170,11 @@ def main():
     p_export.add_argument("--job-id", type=int, default=None, help="Filter export by Job ID")
     p_export.add_argument("--output", default=None, help="Custom export file path")
 
+    # web
+    p_web = subparsers.add_parser("web", help="Start local web server to view live web dashboard")
+    p_web.add_argument("--port", type=int, default=8000, help="Port to listen on (default: 8000)")
+    p_web.add_argument("--no-browser", action="store_true", help="Do not automatically open browser")
+
     args = parser.parse_args()
 
     commands = {
@@ -151,6 +185,7 @@ def main():
         "jobs": cmd_jobs,
         "items": cmd_items,
         "export": cmd_export,
+        "web": cmd_web,
     }
 
     if args.command in commands:
